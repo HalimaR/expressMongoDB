@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Products</title>
+  <link rel='stylesheet' href='css/bootstrap.min.css'>
+</head>
+<body>
+  <h1>All products</h1>
+ <br/><br/>
+  <ul class='product'>
+  <% for(var i=0; i < product.length; i++) {%>
+    <li class='product'>
+      <span><b>Name : </b><%= product[i].name %></span><br />
+      <span><b>Description : </b><%= product[i].description %></span><br />
+      <span><b>Price : </b><%= product[i].price %></span><br />
+    </li>
+  <% } %>
+  </ul>
+<br />
+
+<a href='/add'>Add product</a>&nbsp;&nbsp;<a href='/search'>zoek film</a>
+
+</body>
+</html>
